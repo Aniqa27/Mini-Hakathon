@@ -242,3 +242,101 @@ padding-right: 10px;
     padding-top: 50px;
     background-color: #e6e8ea;
 }
+/* ........Responsivenes........ */
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* For tablets and below */
+@media (max-width: 1024px) {
+    .navbar, .slide, .member_icon, .cont_3, .cont_4, .cont_5, .cont_6, .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .home {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .slide {
+        height: auto;
+        padding: 50px 20px;
+    }
+
+    .slid_content, .cont_3bio, .cont_5bio, .cont_6bio {
+        width: 90%;
+    }
+
+    .icons {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .member_icon {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .bio_4icon, .cont6_icon {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .cont_5, .cont_3 {
+        padding: 20px 10px;
+    }
+
+    .footer {
+        flex-wrap: wrap;
+        padding: 30px 10px;
+        gap: 20px;
+    }
+
+    .col1, .col_2, .col_4 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .col_4Em {
+        justify-content: center;
+    }
+
+    .col_8 h1 {
+        font-size: 24px;
+        padding: 0 20px;
+    }
+}
+
+/* For mobile phones */
+@media (max-width: 768px) {
+    .slid_content h1, .community h1, .cont_3bio h1, .cont_5bio h1, .col_8 h1 {
+        font-size: 28px;
+    }
+
+    .home button, .slid_content button, .cont_3bio button, .cont_5bio button, .col_8 button {
+        width: 100%;
+    }
+
+    input {
+        width: 90%;
+    }
+
+    .slide, .cont_3, .cont_5, .cont_6 {
+        padding: 20px 10px;
+    }
+
+    .b4icon, .b4bio {
+        width: 100%;
+        text-align: center;
+    }
+
+    .row1, .row2 {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
